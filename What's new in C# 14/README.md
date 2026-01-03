@@ -1,39 +1,32 @@
-# C# 14 Audit (Console, .NET 10)
+# Modern C# (C# 14 era) — Before/After
 
-This repo is a deliberately conservative audit of features often claimed for “C# 14”. Each demo is labeled as **Final**, **Preview**, or **Baseline (earlier C#)** to avoid version drift. All outputs are purely to prove compiler behaviors.
+This repository shows how modern C# helps us write cleaner, safer, and more readable code using simple before/after examples. It is meant to be shared on GitHub and LinkedIn and to be understandable in a few minutes.
 
-## Environment
-- .NET SDK: 10.x (preview channel recommended)
-- LangVersion: `preview` (set in `What's new in C# 14.csproj`)
-- Project type: Console
+## What you’ll see
+- Primary constructors — cleaner object initialization
+- Collection expressions with spread — shorter list building
+- Default parameters on lambdas — fewer helper methods
+- Type aliases (including tuples) — clearer intent in signatures
 
-## Feature Classification
-- Preview (C# 14):
-  - Primary constructors on classes (requires `/langversion:preview`)
-  - Ref readonly parameters in wider call patterns (treated as preview)
-- Baseline (earlier C#; included for contrast, not “new” to 14):
-  - Collection expressions with spread (`[]`, `..`) — C# 12
-  - Default parameter values on lambdas — C# 12
-  - Alias any type (including tuples) — C# 12
-
-## Structure
+Each feature folder contains:
 ```
 /Features
-  /FeatureName
-    FeatureName.Before.cs   // prior pattern or limitation
-    FeatureName.After.cs    // new/preview syntax
-    FeatureName.Demo.cs     // prints before vs after evidence
-Program.cs                  // runs all demos with status labels
+  /PrimaryConstructors
+  /CollectionExpressions
+  /LambdaDefaults
+  /TypeAliases
+Program.cs
 ```
+
+`Program.cs` prints clear section headers and the console shows “Before” and “After” outputs that match the code.
+
+## Why it matters
+- Less boilerplate means less chance of mistakes.
+- Names and signatures become clearer to readers.
+- New syntax keeps the intent obvious without digging through constructors or helpers.
 
 ## How to run
-```bash
+```
 dotnet run
 ```
-Output shows per-feature sections with `[PreviewCSharp14]` or `[BaselineEarlier]` labels and before/after evidence.
-
-## Notes and Exclusions
-- Only features that compile with the configured SDK are shown.
-- Baseline items are kept to prevent mislabeling C# 12 features as “new in 14”.
-- If your SDK lacks the preview bits for primary constructors on classes or widened ref readonly scenarios, keep `/langversion:preview` and use the latest .NET 10 previews.
-
+Then read the console output alongside the code files. Everything is small, self-contained, and ready for a quick review.

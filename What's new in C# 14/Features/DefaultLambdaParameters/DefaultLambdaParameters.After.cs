@@ -1,6 +1,6 @@
 namespace What_s_new_in_C__14.Features.DefaultLambdaParameters;
 
-// ✅ Introduced in C# 12 (baseline): default parameter values on lambdas.
+// Modern style: default parameter values directly on a lambda.
 public delegate int Adder(int value, int bonus = 10);
 
 public static class DefaultLambdaParameters_After
