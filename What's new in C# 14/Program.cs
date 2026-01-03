@@ -20,8 +20,8 @@ internal static class Program
             new TypeAliasesDemo(),
         };
 
-        Console.WriteLine("Modern C# (C# 14 era) — Before/After");
-        Console.WriteLine("------------------------------------\n");
+        Console.WriteLine("C# 14 in Practice — Clear Before & After Examples");
+        Console.WriteLine("---------------------------------------\n");
 
         foreach (var demo in demos)
         {

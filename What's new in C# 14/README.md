@@ -1,8 +1,8 @@
-# Modern C# — Cleaner, More Readable Code
+# C# 14 & Modern C# — Cleaner, More Readable Code
 
-**A practical guide to modern C# through simple Before/After comparisons.**
+**A practical guide to modern C# features through simple Before/After comparisons.**
 
-This repository demonstrates how recent C# features reduce "language ceremony" and boilerplate, allowing you to focus on clear, maintainable logic.
+This repository demonstrates how C# 14 and recent updates reduce "language ceremony" and boilerplate, allowing you to focus on clear, maintainable logic.
 
 ## 🚀 How to Use This
 1. **Run the App**: Execute `dotnet run` to see the results.
@@ -21,4 +21,4 @@ This repository demonstrates how recent C# features reduce "language ceremony" a
 * **Default Lambda Parameters**: Declaring defaults directly in lambdas.
 * **Type Aliases**: Using aliases for tuples to improve readability.
 
-By comparing the files in each feature folder, you can see exactly how modern C# makes code more intuitive and easier to read.
+By comparing the files in each feature folder, you can see exactly how C# 14 era features make code more intuitive and easier to read.
